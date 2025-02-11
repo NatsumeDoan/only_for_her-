@@ -19,7 +19,7 @@ button.addEventListener("click", function(){
         let timeout = setInterval(()=>{
             var letters = document.createElement("div");
             letters.className = "letters"
-            letters.innerHTML = '<img src="../image/letters.png" alt="">';
+            letters.innerHTML = '<img src="image/letters.png" alt="">';
             document.querySelector("body").prepend(letters)
             let left = Math.floor(Math.random() * 100);
             let rotate = Math.floor(Math.random() * 360);
@@ -47,7 +47,7 @@ button.addEventListener("click", function(){
         })
         document.querySelector(".fa-xmark2").addEventListener("click", function(){
             document.querySelector(".gallery-content").style.display="none";
-            document.querySelector(".grid-content").style.display="block";
+            document.querySelector(".grid-content.p").style.display="block";
             document.querySelector("body").style.overflow="auto";
             
         })
