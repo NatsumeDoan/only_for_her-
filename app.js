@@ -21,13 +21,13 @@ button.addEventListener("click", function(){
             letters.className = "letters"
             letters.innerHTML = '<img src="image/letters.png" alt="">';
             document.querySelector("body").prepend(letters)
-            let left = Math.floor(Math.random() * 100);
+            let left = Math.floor(Math.random() * 90);
             let rotate = Math.floor(Math.random() * 360);
             letters.style.left = left + "%";
-            letters.style.top = "-10%";
+            letters.style.top = "-20%";
             letters.style.transform = `rotate(${rotate}deg)`;
             setTimeout(()=>{
-                letters.style.top = "100%";
+                letters.style.top = "110%";
             },500)
             setTimeout(()=>{
                 letters.remove()
@@ -41,13 +41,13 @@ button.addEventListener("click", function(){
                 })
             })
         },500)
-        document.querySelector(".fa-xmark").addEventListener("click", function(){
+        document.querySelector(".fa-xmark1").addEventListener("click", function(){
             document.querySelector(".wrapperLetterForm").style.display="none";
             document.querySelector(".gallery-content").style.display="block";            
         })
         document.querySelector(".fa-xmark2").addEventListener("click", function(){
             document.querySelector(".gallery-content").style.display="none";
-            document.querySelector(".grid-content.p").style.display="block";
+            document.querySelector(".grid-content").style.display="block";
             document.querySelector("body").style.overflow="auto";
             
         })
@@ -106,7 +106,6 @@ function progressInterva(){
         clearInterval(progressLoad)
         percent.textContent = "Xong rùi đó:)";
         percent.style.letterSpacing = "1px";
-        textBox.style.transform = "scale(1.3)"
         heartItem3.style.animation = "1s heartScale forwards"
         setTimeout(()=>{
             textBox.style.transform = "scale(0)"
