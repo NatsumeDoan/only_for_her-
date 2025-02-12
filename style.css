@@ -521,12 +521,22 @@ body{
   @media (max-width: 780px) {
     .giftbox img{
         width: 50%;
+        padding-top: 50px;
     }
     .textLetter{
         width: 100%;
     }
   }
   @media (max-width: 420px) {
+    .boxLetter .before{
+        height: 60%;
+    }
+    .boxLetter .formLetter{
+        height: 65%;
+    }
+    .giftbox{
+        display: none;
+    }
   .progress-bar{
     width: 340px;
   }
