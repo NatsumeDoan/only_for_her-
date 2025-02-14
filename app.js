@@ -47,6 +47,7 @@ button.addEventListener("click", function(){
         })
         document.querySelector(".fa-xmark2").addEventListener("click", function(){
             document.querySelector(".gallery-content").style.display="none";
+            document.getElementById("sakura").remove();
             document.querySelector(".grid-content").style.display="block";
             document.querySelector("body").style.overflow="auto";
             
